@@ -1,10 +1,11 @@
-# EricssonChallenge
+# Cloud RAN Challenge K8s files
 This repo contains the deploment.yaml file and service.yaml file
 
 In hello-app-deployment.yaml, the hello-app base image is used. 
-And, in the hello-app-service.yaml file, a load balancer service is created.
+And, in the hello-app-service.yaml file, a NodePort service is created.
 
-After creating these files, they are applied using the kubectl apply command
+After creation, these files are applied using the
+kubectl apply -f <file-name> command
 
 And finally using minikube service command, the service is run and an URL is received.
 
